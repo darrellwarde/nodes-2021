@@ -1,0 +1,21 @@
+mutation {
+  createUsers(input: [{ name: "darrell" }]) {
+    users {
+      name
+    }
+  }
+}
+
+mutation {
+  createMovies(
+    input: [
+      { title: "Batman Begins" }
+      { title: "The Dark Knight" }
+      { title: "The Dark Knight Rises" }
+    ]
+  ) {
+    movies {
+      title
+    }
+  }
+}

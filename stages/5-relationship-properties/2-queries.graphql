@@ -1,0 +1,13 @@
+query {
+  users {
+    name
+    moviesConnection {
+      edges {
+        format
+        node {
+          title
+        }
+      }
+    }
+  }
+}

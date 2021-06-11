@@ -1,0 +1,11 @@
+type Movie {
+  title: String!
+  owners: [User!]! @relationship(type: "OWNS", direction: IN)
+}
+
+type User {
+  name: String!
+  movies: [Movie!]! @relationship(type: "OWNS", direction: OUT)
+  moviesCount: Int!
+    @cypher(statement: "MATCH (this)-[:OWNS]->(m:Movie) RETURN count(m)")
+}

@@ -1,0 +1,27 @@
+mutation {
+  updateUsers(
+    where: { name: "darrell" }
+    connect: { movies: [{ where: { title: "Batman Begins" } }] }
+  ) {
+    users {
+      name
+      movies {
+        title
+      }
+    }
+  }
+}
+
+mutation {
+  updateMovies(
+    where: { title_STARTS_WITH: "The Dark Knight" }
+    connect: { owners: [{ where: { name: "darrell" } }] }
+  ) {
+    movies {
+      title
+      owners {
+        name
+      }
+    }
+  }
+}

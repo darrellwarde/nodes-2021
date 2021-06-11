@@ -1,0 +1,25 @@
+mutation {
+  updateUsers(
+    where: { name: "darrell" }
+    update: {
+      movies: [
+        {
+          where: { node: { title: "American Psycho" } }
+          properties: { format: "Blu-ray" }
+        }
+      ]
+    }
+  ) {
+    users {
+      name
+      moviesConnection {
+        edges {
+          format
+          node {
+            title
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+mutation {
+  createActors(
+    input: [
+      {
+        firstName: "Christian"
+        lastName: "Bale"
+        movies: {
+          connect: [
+            {
+              where: {
+                OR: [
+                  {
+                    title: "Batman Begins"
+                    title_STARTS_WITH: "The Dark Knight"
+                  }
+                ]
+              }
+            }
+          ]
+          create: [
+            { title: "The Big Short" }
+            {
+              title: "American Psycho"
+              owners: { connect: [{ where: { name: "darrell" } }] }
+            }
+          ]
+        }
+      }
+    ]
+  ) {
+    actors {
+      firstName
+      lastName
+      movies {
+        title
+        owners {
+          name
+        }
+      }
+    }
+  }
+}
