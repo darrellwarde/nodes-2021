@@ -92,10 +92,10 @@
   resolved "https://registry.yarnpkg.com/@josephg/resolvable/-/resolvable-1.0.1.tgz#69bc4db754d79e1a2f17a650d3466e038d94a5eb"
   integrity sha512-CtzORUwWTTOTqfVtHaKRJ0I1kNQd1bpn3sUh8I3nJDVY+5/M/Oe1DnEWzPQvqq/xPIIkzzzIP7mfCoAjFRvDhg==
 
-"@neo4j/graphql@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@neo4j/graphql/-/graphql-1.0.2.tgz#a3f51e76d8c0900262c1c4cf82dddee827c3d43d"
-  integrity sha512-gyGKBHfe/IPyRVLIp2nf6SmGM0kjhrERpqbzzngt2oHuu8ad2VdS1qvPfT1Df2GvxSAluLSneke5RsdBI3GgYg==
+"@neo4j/graphql@^2.0.0-alpha.1":
+  version "2.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@neo4j/graphql/-/graphql-2.0.0-alpha.1.tgz#170010106d8d08ec690dc0176d7e89590ba14816"
+  integrity sha512-JVyijDDwvo+66ISYu9mLrO41oXEuGCLso+d3GR0vvW6wzQg1BASgRJc4jO37ykJ/o79p6FhloV1yqzS0PRhqtw==
   dependencies:
     "@graphql-tools/merge" "^6.2.13"
     "@graphql-tools/schema" "^7.1.3"
@@ -107,7 +107,6 @@
     graphql-parse-resolve-info "^4.11.0"
     jsonwebtoken "^8.5.1"
     pluralize "^8.0.0"
-    upper-case-first "^2.0.2"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -2422,13 +2421,6 @@ update-notifier@^4.1.0:
     pupa "^2.0.1"
     semver-diff "^3.1.1"
     xdg-basedir "^4.0.0"
-
-upper-case-first@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/upper-case-first/-/upper-case-first-2.0.2.tgz#992c3273f882abd19d1e02894cc147117f844324"
-  integrity sha512-514ppYHBaKwfJRK/pNC6c/OxfGa0obSnAl106u97Ed0I625Nin96KAjttZF6ZL3e1XLtphxnqrOi9iWgm+u+bg==
-  dependencies:
-    tslib "^2.0.3"
 
 url-parse-lax@^3.0.0:
   version "3.0.0"
