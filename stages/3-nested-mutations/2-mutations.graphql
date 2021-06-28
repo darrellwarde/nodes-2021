@@ -9,10 +9,8 @@ mutation {
             {
               where: {
                 OR: [
-                  {
-                    title: "Batman Begins"
-                    title_STARTS_WITH: "The Dark Knight"
-                  }
+                  { title: "Batman Begins" }
+                  { title_STARTS_WITH: "The Dark Knight" }
                 ]
               }
             }
